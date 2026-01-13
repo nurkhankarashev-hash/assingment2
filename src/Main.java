@@ -8,8 +8,8 @@ public class Main {
         Account acc2 = new CheckingAccount("67890", 10000, 2000); // Расчетный счет
 
 
-        Customer customer1 = new VIPCustomer("Karashev Nurkhan", "123 Main St", acc1, 0.1);
-        Customer customer2 = new Customer("Suingakiev Ali", "456 Oak St", acc2);
+        Customer customer1 = new VIPCustomer("Karashev Nurkhan", "Abai 1", acc1, 0.1);
+        Customer customer2 = new Customer("Suingakiev Ali", "Abai 2", acc2);
 
 
         Bank bank = new NationalBank("Freedom Bank", "Kazakhstan");
