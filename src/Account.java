@@ -1,4 +1,3 @@
-// Абстрактный класс Account (Счет)
 public abstract class Account {
     private String accountNumber;
     private double balance;
@@ -8,8 +7,7 @@ public abstract class Account {
         this.balance = balance;
     }
 
-    // Геттеры и сеттеры
-    public String getAccountNumber() {
+        public String getAccountNumber() {
         return accountNumber;
     }
 
@@ -25,14 +23,11 @@ public abstract class Account {
         this.balance = balance;
     }
 
-    // Абстрактный метод для депозита (реализуется в дочерних классах)
-    public abstract void deposit(double amount);
+        public abstract void deposit(double amount);
 
-    // Абстрактный метод для снятия средств (реализуется в дочерних классах)
-    public abstract void withdraw(double amount);
+       public abstract void withdraw(double amount);
 
-    // Переопределение toString(), equals(), hashCode()
-    @Override
+       @Override
     public String toString() {
         return "Account Number: " + accountNumber + ", Balance: " + balance;
     }

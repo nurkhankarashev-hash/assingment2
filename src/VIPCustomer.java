@@ -1,4 +1,3 @@
-// Дочерний класс VIPCustomer (VIP клиент)
 public class VIPCustomer extends Customer {
     private double discountRate;
 
@@ -7,7 +6,6 @@ public class VIPCustomer extends Customer {
         this.discountRate = discountRate;
     }
 
-    // Геттеры и сеттеры для discountRate
     public double getDiscountRate() {
         return discountRate;
     }

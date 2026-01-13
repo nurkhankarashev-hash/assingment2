@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Базовый класс Customer (Клиент)
 public class Customer {
     private String name;
     private String address;
@@ -13,7 +12,6 @@ public class Customer {
         this.account = account;
     }
 
-    // Геттеры и сеттеры для name, address и account
     public String getName() {
         return name;
     }

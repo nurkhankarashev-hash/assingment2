@@ -1,4 +1,3 @@
-// Дочерний класс CheckingAccount (Расчетный счет)
 public class CheckingAccount extends Account {
     private double overdraftLimit;
 
@@ -7,8 +6,7 @@ public class CheckingAccount extends Account {
         this.overdraftLimit = overdraftLimit;
     }
 
-    // Геттеры и сеттеры для overdraftLimit
-    public double getOverdraftLimit() {
+        public double getOverdraftLimit() {
         return overdraftLimit;
     }
 
@@ -16,16 +14,14 @@ public class CheckingAccount extends Account {
         this.overdraftLimit = overdraftLimit;
     }
 
-    // Реализация метода депозита
-    @Override
+      @Override
     public void deposit(double amount) {
         if (amount > 0) {
             setBalance(getBalance() + amount);
         }
     }
 
-    // Реализация метода снятия средств
-    @Override
+        @Override
     public void withdraw(double amount) {
         if (amount > 0 && getBalance() + overdraftLimit >= amount) {
             setBalance(getBalance() - amount);

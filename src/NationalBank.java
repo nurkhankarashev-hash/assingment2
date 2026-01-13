@@ -1,4 +1,3 @@
-// Дочерний класс NationalBank (Национальный банк)
 public class NationalBank extends Bank {
     private String country;
 
@@ -7,7 +6,6 @@ public class NationalBank extends Bank {
         this.country = country;
     }
 
-    // Геттеры и сеттеры для country
     public String getCountry() {
         return country;
     }

@@ -13,7 +13,7 @@ public class Bank {
         this.accounts = new ArrayList<>();
     }
 
-    // Геттеры и сеттеры для name и accounts
+
     public String getName() {
         return name;
     }
@@ -43,18 +43,17 @@ public class Bank {
         return null;
     }
 
-    // Переопределение toString()
+
     @Override
     public String toString() {
         return "Bank Name: " + name + ", Accounts: " + accounts.size();
     }
 
-    // Метод для сортировки счетов по балансу
+
     public void sortAccountsByBalance() {
         accounts.sort((a1, a2) -> Double.compare(a2.getBalance(), a1.getBalance()));
     }
 
-    // Метод для поиска счетов с балансом больше определенной суммы
     public List<Account> findAccountsAboveBalance(double amount) {
         return accounts.stream()
                 .filter(account -> account.getBalance() > amount)
